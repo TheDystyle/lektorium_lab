@@ -1,0 +1,35 @@
+/* @font-face {
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-Regular.woff2') format('woff2'),
+      url('../fonts/Heebo-Regular.woff') format('woff'),
+      url('../fonts/Heebo-Regular.ttf') format('truetype'),
+      url('../fonts/Heebo-Regular.svg#Heebo-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #21243d;
+  --color-secondary: #636b78;
+  --color-invert: #fff;
+} */
+
+
+header{
+  background: #1C1E53;
+}
+body{
+  background-color:#E5E5E5;
+}
+.sect{
+  /* height: 400px; */
+  /* background: #aeaec3; */
+  border: 1px solid;
+}
+.faq_card{
+  background: #FFFFFF;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
