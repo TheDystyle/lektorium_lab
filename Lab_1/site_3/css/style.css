@@ -12,8 +12,9 @@
   --site-nav-active: #fff;
   --logo: #fff;
   --h1: #fff;
-  --text: #fff;
-  --footer-bg2: #fff;
+  --text: rgb(255, 255, 255);
+  --text_80: rgba(255, 255, 255,0.8);
+  --footerbg2: #fff;
   --wiew-work:#1B1C2B;
 }
 body{
@@ -156,14 +157,57 @@ header .top{
 
 
 /*   footer_1 start */ 
-.footer_1{
+footer{
   height: 397px;
   background: var(--tint-blue);
-  display: flex;
-  
 }
-
-
+.footer_1 {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 517px; */
+}
+.footer_1_1 .f_logo{
+  color: var(--text_80);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer_1_contact{
+  background: var(--yellow);
+  display: flex;
+  justify-content: left;
+}
+/*.footer_1 div:first-child{
+  height: 206px;
+  background:#2405F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.footer_1 .footer_yel{
+  background: var(--yellow);
+  width: 517px;
+  margin: 0;
+}
+.footer_yel p{
+  margin: 0;
+}
+.footer_1_1{
+  color: var(--text);
+}
+.footer_1_2{
+  color:var(--text);
+}
+.footer_1_2 h2{
+  size: 48px;
+  font-weight: 600;
+}
+.footer_1_2 p{
+  size: 16px;
+  font-weight: 400;
+}
+ */
 
 /*   footer_1 end */ 
 /*   footer_2 start */
