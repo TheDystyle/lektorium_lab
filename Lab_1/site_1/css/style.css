@@ -7,7 +7,7 @@
   --button:rgba(66, 112, 236, 1);
   /* --button_hover:rgba(255, 255, 255, 1); */
   --color_button_txt: rgb(255, 255, 255);
-
+  --switch: #B3C7F8;
 }
 
 body{
@@ -33,6 +33,7 @@ body{
 h2{
   font-size: 48px;
   font-weight: 600;
+  margin:0;
 }
 .section_topic{
   font-size: 14px;
@@ -185,12 +186,206 @@ section .content_bottom article{
   background: url("../img/bg_center.png") no-repeat center/cover;
   width: 496px;
   height: 496px;
-  top: 24px;
+  top: 450px;
   left: 88%;
-
-  
   z-index: -10;
-  right: 0;
-  top: 0;
 }
 /* section 2  - FINISH*/
+
+/* section 3  - START*/
+.block_3 .content_top .content_left{
+  width: 50%;
+  margin-right: 5px;
+}
+.block_3 .content_top .content_right{
+  width: 50%;
+  margin-left: 5px;
+}
+.block_3 .description_topic{
+  color:var(--content);
+  line-height: 25px;
+}
+.block_3 .content_right a{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--button);
+  text-decoration: none;
+}
+.block_3 .content_bottom {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.block_3 .title{
+  flex-basis: 30%;
+  position: relative;
+}
+.block_3 .title .icons{
+  position: absolute;
+  top: 400px;
+  right: 30px;
+}
+.block_3 .title .icons span{
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-left: 4px;
+  padding-right: 2px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  color: var(--button);
+  border-radius: 100%;
+  background: white;
+  cursor: pointer;
+}
+/* section 3  - FINISH*/
+
+/* section 4  - START*/
+.block_4{
+  width: 80%;
+  margin: 0 auto 200px;
+  text-align: center;
+}
+.block_4 .content_top{
+  display: block;
+}
+.block_4 .content_bottom{
+  background: url(../img/team.png) no-repeat center, url(../img/bg_bottom.png) no-repeat center;
+  height: 407px;
+  width: 961px;
+  align-items:end;
+  margin-top: 0;
+}
+.block_4 h2{
+  line-height: 61px;
+}
+.block_4 .description_client{
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 22px;
+  width: 50%;
+  margin: 0 auto;
+}
+.block_4 .description_client p:nth-child(2){
+  color: var(--text_p);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  margin:0;
+  text-transform: uppercase;
+}
+.block_4 .description_client p:nth-child(3){
+  color: var(--text_p);
+  font-size: 12px;
+  line-height: 24px;
+  margin:0;
+  text-transform: uppercase;
+}
+.block_4 .switch{
+  display: flex;
+  justify-content: space-between;
+  width: 72px;
+  margin: 50px auto 0;
+}
+.block_4 .switch span{
+  width: 10px;
+  height: 10px;
+  background: var(--switch);
+  border-radius: 100%;
+  /* padding-right:10px; */
+}
+.block_4 .switch span:hover{
+  /* width: 12px;
+  height: 12px; */
+  background:var(--menu_hover);
+  cursor: pointer;
+}
+/* section 4  - FINISH*/
+
+/* section 5  - START*/
+.block_5 .content_top{
+  display: block;
+  text-align: center;
+}
+.block_5 .content_bottom{
+  margin-top: 90;
+}
+.block_5 .content_bottom article{
+  display: block;
+  flex-basis: 100%;
+}
+.block_5 .content_bottom article img{
+  width: 100%;
+  margin-right: 50px;
+}
+.block_5 .content_bottom article .date{
+  font-size:12px;
+  font-weight: 500;
+  line-height: 19px;
+  color: rgba(30, 28, 49, 0.6);
+}
+.block_5 .content_bottom article p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.block_5 .content_bottom article a{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color:var(--menu_hover);
+}
+.block_5 .content_bottom article a:hover{
+  cursor: pointer;
+}
+
+/* section 5  - FINISH*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section 6  - START */
+.block_6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid; */
+  border-radius: 30px;
+  background: linear-gradient(to right, #527FF6 50%,#E16DD9 87%,#FFCC70 100%)
+}
+.block_6 .content_left{
+  width: 55%;
+}
+.block_6 h2{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 51px;
+  color: #fff;
+}
+.block_6 button{
+  background: #fff;
+  color: #4270EC;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+/* section 6  - FINISH */
