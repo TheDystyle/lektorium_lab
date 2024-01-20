@@ -5,6 +5,7 @@
   --body: rgb(228,242,251);
   --text-color: white;
   --main-blue:#00042D;
+  --main-white:white;
 }
 body{
   margin: 0;
@@ -16,8 +17,14 @@ body{
   width: 100%;
   background:var(--body);
  }
-
+.vertical_line{
+  height: 100px;
+  width: 2.25px;
+  background: var(--main-blue);
+}
+/* header START */
 header{
+  box-sizing: border-box;
   position: relative;
   border: 1px solid;
   display: flex;
@@ -26,7 +33,7 @@ header{
   width: 57%;
   height: 778px;
   margin: 120px auto 0;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background: var(--main-blue);
 }
 header .title{
@@ -128,11 +135,109 @@ header div:first-child p .bold_italic{
   font-weight: 600;
   font-style: italic;
 }
+/* header END */
+
+/* section 1 - about START */
+.about{
+  border: 1px solid var(--main-white);
+  background: var(--main-white);
+  width: 57%;
+  height: 640px;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+.about h2{
+  font-family: "Playfair Display", serif;  
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 94.5px;
+  color: var(--main-blue);
+  margin-bottom: 2%;
+}
+.about .vertical_line{
+  height: 100px;
+  width: 2.25px;
+  background: var(--main-blue);
+}
+.about p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--main-blue);
+}
+.about p:last-child{
+  font-size: 15px;
+  font-weight: 400;
+}
+/* section 1 - about END */
+/* section 2 - service START */
+.service{
+  border: 1px solid var(--main-blue);
+  background: var(--main-blue);
+  width: 57%;
+  height: 329px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--text-color);
+  padding: 0 4%;
+}
+.service p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* section 2 - service END */
+/* section 3 - experience START */
+.experience{
+  border: 1px solid var(--main-white);
+  background: var(--main-white);
+  width: 57%;
+  height: 952px;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  color: var(--main-blue);
+}
+.experience .description{
+  border-bottom: 2px solid var(--main-blue);
+  padding-bottom: 8px;
+}
+.experience .description p:nth-of-type(1){
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.experience .description p:nth-of-type(2){
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+.experience .description p:nth-of-type(3){
+  font-size: 15px;
+  font-weight: 400;
+}
+.experience .skills{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  border-bottom: 2px solid var(--main-blue);
+  padding-bottom: 8px;
+  margin-top: 32px;
+}
+
+/* section 3 - experience END */
 
 
 
-
-
-
+/* section  -  START */
+/* section  -  END */
 
 
