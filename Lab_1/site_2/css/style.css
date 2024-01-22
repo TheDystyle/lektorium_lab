@@ -7,6 +7,9 @@
   --main-blue:#00042D;
   --main-white:white;
 }
+*{
+  border: 1px solid red
+}
 body{
   margin: 0;
   padding: 0;
@@ -20,7 +23,16 @@ body{
 .vertical_line{
   height: 100px;
   width: 2.25px;
+  margin-bottom: 40px;
   background: var(--main-blue);
+}
+h2{
+  font-family: "Playfair Display", serif;  
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 94.5px;
+  color: var(--main-white);
+  margin-bottom: 2%;
 }
 /* header START */
 header{
@@ -31,16 +43,11 @@ header{
   justify-content: space-between;
   align-items: start;
   width: 57%;
-  height: 778px;
   margin: 120px auto 0;
-  /* flex-wrap: wrap; */
+  padding-bottom: 143px;
   background: var(--main-blue);
 }
-header .title{
-  border: 1px solid;
-}
 header .title button{
-  border: 2px solid;
   width: 230px;
   height: 56px;
   color: var(--text-color);
@@ -51,6 +58,7 @@ header .title button{
   text-align: center;
   background: transparent;
   border: 1px solid var(--text-color);
+  text-transform: uppercase;
 }
 header div:first-child{
   width: 478px;
@@ -61,9 +69,8 @@ header .menu{
   background: url("../img/logo.png") no-repeat;
   background-position:top right;
   position: absolute;
-  top: 417px;
+  top: 435px;
   left: -480px;
-  /* border: 1px solid rgb(176, 112, 112); */
   color: var(--text-color);
   font-size: 12px;
   font-weight: 700;
@@ -78,7 +85,6 @@ header .menu{
 
 header .menu .name_author{
   width: 100%;
-  /* border: 1px solid rgb(176, 112, 112); */
   color: var(--main-blue);
   font-size: 12px;
   font-weight: 700;
@@ -87,10 +93,10 @@ header .menu .name_author{
   text-align: right;
   margin: 0;
   display: block;
+  padding-right: 30px;
 }
 header .menu .soc_link{
   width: 100%;
-  /* border: 1px solid rgb(176, 112, 112); */
   display: flex;
   color: var(--main-blue);
   font-size: 12px;
@@ -104,12 +110,18 @@ header .menu .soc_link{
 header .menu .soc_link span{
   margin-right: 35px;
 }
-header div:last-child{
-  width: 22%;
+header .portrait{
+  width: 424px;
   position: relative;
-  left: -5%;
-  top: 6%;
+  left: 18%;
+  margin-top: 6%;
 }
+header div:last-child img{
+  width: 100%;
+}
+/* header .portrait img{
+  border: 10px solid green;
+} */
 header div:last-child img{
   margin-left: 5px;
 }
@@ -142,7 +154,7 @@ header div:first-child p .bold_italic{
   border: 1px solid var(--main-white);
   background: var(--main-white);
   width: 57%;
-  height: 640px;
+  padding-bottom: 80px;
   margin: 0 auto;
   padding-left: 4%;
   padding-right: 8%;
@@ -186,10 +198,17 @@ header div:first-child p .bold_italic{
   color: var(--text-color);
   padding: 0 4%;
 }
+h2{
+  color: var(--main-blue);
+}
 .service p{
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+}
+.service img{
+  width: 100%;
+  height: auto;
 }
 /* section 2 - service END */
 /* section 3 - experience START */
@@ -197,10 +216,10 @@ header div:first-child p .bold_italic{
   border: 1px solid var(--main-white);
   background: var(--main-white);
   width: 57%;
-  height: 952px;
   margin: 0 auto;
   padding-left: 4%;
   padding-right: 8%;
+  padding-bottom: 80px;
   box-sizing: border-box;
   color: var(--main-blue);
 }
@@ -222,7 +241,7 @@ header div:first-child p .bold_italic{
   font-size: 15px;
   font-weight: 400;
 }
-.experience .skills{
+.experience .direction{
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -232,12 +251,219 @@ header div:first-child p .bold_italic{
   padding-bottom: 8px;
   margin-top: 32px;
 }
-
 /* section 3 - experience END */
-
-
-
-/* section  -  START */
-/* section  -  END */
+/* section 4 - portfolio START */
+.portfolio{
+  background: var(--main-blue);
+  width: 57%;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+  color: var(--main-white);
+  padding-bottom: 80px;
+}
+.portfolio h2{
+  color: var(--main-white);
+}
+.portfolio .vertical_line{
+  background: var(--main-white);
+}
+.portfolio img{
+  width: 100%;
+  height: auto;
+}
+.portfolio div span{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.portfolio div{
+  font-family: "Playfair Display", serif;  
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 94.5px;
+}
+/* section 4 - portfolio END */
+/* section 5 - Education START */
+.education{
+  background: var(--main-white);
+  width: 57%;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+  color: var(--main-blue);
+  padding-bottom: 80px;
+}
+.education p:nth-of-type(1){
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.education p:nth-of-type(2){
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+.education .description{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.education .circle{
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--main-blue);
+  border-radius: 100%;
+}
+.education .line{
+  width: 2px;
+  height: 53px;
+  background: var(--main-blue);
+}
+.education .circle_line span{
+  display: flex;
+  justify-content: center;
+}
+/* section 5 - Education END */
+/* section 6 - skills START */
+.skills{
+  border: 1px solid var(--main-white);
+  background: var(--main-blue);
+  width: 57%;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 8%;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  color: var(--main-white);
+}
+.skills h2{
+  color: var(--main-white);
+}
+.skills .vertical_line{
+  background: var(--main-white);
+}
+.skills .items{
+  display: flex;
+  width: 100%;
+}
+/* section 6 - skills END */
+/* section 7 - Cover Letter START */
+.cover_letter{
+  background: var(--main-white);
+  width: 57%;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+  color: var(--main-blue);
+  padding-bottom: 80px;
+}
+.cover_letter p:nth-of-type(1){
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.cover_letter p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+/* section 7 - Cover Letter END */
+/* section 8 - Contact START */
+.contact{
+  border: 1px solid var(--main-white);
+  background: var(--main-blue);
+  width: 57%;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 8%;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  color: var(--main-white);
+}
+.contact .vertical_line{
+  background: var(--main-white);
+}
+.contact h2{
+  color: var(--main-white);
+}
+.contact button{
+  margin-top: 57px;
+  width: 230px;
+  height: 56px;
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing:5px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid var(--text-color);
+  text-transform: uppercase;
+}
+.contact p:nth-of-type(1){
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.contact p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+.contact p span{
+  font-weight: 700;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+}
+.contact form input{
+  background: var(--main-blue);
+  border-bottom: 3px solid var(--main-white);
+  height: 67px;
+}
+.contact form input:nth-of-type(3){
+  height: 100px;
+}
+.contact form input[placeholder]{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  padding: 0;
+  color: #FFFFFFB2;
+}
+/* section 8 - Contact END */
+/* footer - START */
+footer{
+  background: var(--main-white);
+  width: 57%;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+  color: var(--main-blue);
+  padding-bottom: 80px;
+}
+footer .soc_icons{
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
+footer .soc_icons img{
+  margin-left: 26px;
+}
+footer .soc_icons img:first-child{
+  margin-left: 0;
+}
+footer p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+}
+/* footer - END */
 
 
