@@ -344,9 +344,48 @@ h2{
 .skills .vertical_line{
   background: var(--main-white);
 }
+
 .skills .items{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin-bottom: 23px;
+}
+.skills .items .line{
+  border: 1px solid var(--main-white);
+  width: 90%;
+}
+.skills .items p{
+  border: 2px solid var(--main-white);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 30px;
+  letter-spacing: 6px;
+  margin: 0;
+  padding-left: 10px;
+}
+.skills .items .photoshop {
+  width: 62%;
+}
+.skills .items .illustrator {
+  width: 84%;
+}
+.skills .items .market {
+  width: 78%;
+}
+.skills .items .mario {
+  width: 92%;
+}
+.skills .items .digit {
+  width: 58%;
+}
+.skills .items div:last-child{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 71px;
+  letter-spacing: -1px;
+  margin-left: 10px;
 }
 /* section 6 - skills END */
 /* section 7 - Cover Letter START */
