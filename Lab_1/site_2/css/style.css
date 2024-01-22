@@ -7,9 +7,9 @@
   --main-blue:#00042D;
   --main-white:white;
 }
-*{
+/* *{
   border: 1px solid red
-}
+} */
 body{
   margin: 0;
   padding: 0;
@@ -32,7 +32,8 @@ h2{
   font-weight: 400;
   line-height: 94.5px;
   color: var(--main-white);
-  margin-bottom: 2%;
+  margin:0;
+  padding-top: 10%;
 }
 /* header START */
 header{
@@ -458,8 +459,10 @@ h2{
 .contact form{
   display: flex;
   flex-direction: column;
+
 }
 .contact form input{
+  border: none;
   background: var(--main-blue);
   border-bottom: 3px solid var(--main-white);
   height: 67px;
@@ -472,7 +475,7 @@ h2{
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 5px;
-  padding: 0;
+  padding-left: 10px;
   color: #FFFFFFB2;
 }
 /* section 8 - Contact END */
@@ -490,7 +493,7 @@ footer{
 footer .soc_icons{
   display: flex;
   align-items: center;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 footer .soc_icons img{
   margin-left: 26px;
