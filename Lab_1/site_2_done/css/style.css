@@ -10,28 +10,6 @@
 /* *{
   border: 1px solid red
 } */
-
-
-/* .container{
-  flex-direction: column;
-}
-.container .year{
-
-}
-.container .graphic{
-
-}
-.container .graphic .circle{
-
-}
-.container .graphic .line{
-
-}
-.container .description{
-
-} */
-
-
 body{
   margin: 0;
   padding: 0;
@@ -150,9 +128,6 @@ header .portrait{
 header div:last-child img{
   width: 100%;
 }
-/* header .portrait img{
-  border: 10px solid green;
-} */
 header div:last-child img{
   margin-left: 5px;
 }
@@ -162,7 +137,6 @@ header div:first-child h1{
   font-weight: 400;
   line-height: 90px;
   color: var(--text-color);
-  /* border: 1px solid rgb(146, 99, 99); */
   padding: 0;
   margin: 0;
 }
@@ -172,14 +146,12 @@ header div:first-child p{
   font-size: 16px;
   line-height: 32px;
   color: var(--text-color);
-  /* border: 1px solid rgb(146, 99, 99); */
 }
 header div:first-child p .bold_italic{
   font-weight: 600;
   font-style: italic;
 }
 /* header END */
-
 /* section 1 - about START */
 .about{
   border: 1px solid var(--main-white);
@@ -574,5 +546,3 @@ footer p{
   line-height: 30px;
 }
 /* footer - END */
-
-
