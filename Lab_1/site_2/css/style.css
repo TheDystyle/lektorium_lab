@@ -10,6 +10,28 @@
 /* *{
   border: 1px solid red
 } */
+
+
+/* .container{
+  flex-direction: column;
+}
+.container .year{
+
+}
+.container .graphic{
+
+}
+.container .graphic .circle{
+
+}
+.container .graphic .line{
+
+}
+.container .description{
+
+} */
+
+
 body{
   margin: 0;
   padding: 0;
@@ -34,6 +56,14 @@ h2{
   color: var(--main-white);
   margin:0;
   padding-top: 10%;
+}
+a{
+  text-decoration: none;
+  color:var(--main-blue);
+  cursor: pointer;
+}
+button:hover{
+  cursor: pointer;
 }
 /* header START */
 header{
@@ -306,25 +336,62 @@ h2{
   font-size: 15px;
   line-height: 30px;
 }
-.education .description{
+.education .point{
   display: flex;
-  justify-content: space-between;
-  align-items:center;
+  justify-content: left;
+  align-items:stretch;
 }
-.education .circle{
-  width: 35px;
-  height: 35px;
-  border: 2px solid var(--main-blue);
-  border-radius: 100%;
+.education .point div:first-child{
+  font-family: Montserrat;
+font-size: 15px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0px;
+text-align: left;
+
 }
-.education .line{
-  width: 2px;
-  height: 53px;
-  background: var(--main-blue);
+.education .point p{
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
 }
-.education .circle_line span{
-  display: flex;
-  justify-content: center;
+.education .circle_line{
+  border-left: 2px solid black;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.education .last{
+  border-left: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.education .last:after{
+  content:'';
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #000;
+  border: 2px solid #fff;
+  position: relative;
+  left: -7px;
+  top: -16px;
+}
+.education .circle_line:before{
+  content:'';
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #000;
+  position: relative;
+  left: -11px;
 }
 /* section 5 - Education END */
 /* section 6 - skills START */
