@@ -138,13 +138,87 @@ color: var(--white);
 .header .buttons .view_pricing a:after{
   content:"\2192";
 }
+/* section HEADER end */
+
+/* section how_we_work START */
+.how_we_work{
+  background:var(--grey);
+  display: flex;
+  padding: 120px 160px 130px 160px;
+}
+.how_we_work .left_block{
+  width: 40%;
+}
+.how_we_work .left_block h2{
+font-size: 48px;
+font-weight: 600;
+line-height: 64px;
+color: var(--dark-blue);
+}
+.how_we_work .left_block p:nth-of-type(1){
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--dark-blue);
+  padding-top: 16px;
+}
+.how_we_work .left_block p:nth-of-type(2){
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--royal-blue);
+  padding-top: 16px;
+}
+.how_we_work .left_block p:nth-of-type(2):after{
+  content:"\2192";
+}
+.how_we_work p, .how_we_work h2, .how_we_work h5{
+  margin: 0;
+}
+.how_we_work .item{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 72px;
+}
+.how_we_work .item div{
+  max-width: 328px;
+  padding-bottom: 16px;
+}
+.how_we_work .item div img{
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+.how_we_work .item div h5{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: var(--dark-blue);
+}
+.how_we_work .item div p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--dark-blue);
+  padding-top: 16px;
+  margin-right: 26px;
+}
+/* section how_we_work END */
+
+
+
+
+/* section  START */
+/* section  END */
+
 
 
 
 
 /* footer START */
 footer{
-  background:var(--tint-blue);
+  background: var(--tint-blue);
 }
 footer .footer_content{
   color: var(--white);
@@ -177,7 +251,6 @@ footer .description .left_part p{
   font-weight: 500;
   line-height: 28px;
   padding-top: 24px;
-  /* display: block; */
   width: 75%;
 }
 footer .description .right_part{
@@ -195,10 +268,6 @@ footer .description .right_part p{
   padding-top: 10px;
   padding-bottom: 28px;
 }
-
-
-
-
 footer .contacts{
   background: var(--yellow);
   width: 42%;
@@ -206,27 +275,22 @@ footer .contacts{
   color: var(--dark-blue);
 }
 footer .contacts div{
-  /* margin-left: 7%; */
   margin: 3% 0 3% 7%;
 }
 footer .contacts div p:first-child{
 font-size: 18px;
 font-weight: 500;
 line-height: 32px;
-/* padding: 0; */
 margin: 0;
 }
 footer .contacts div p:last-child{
-  /* padding: 0; */
   margin: 0;
 font-size: 16px;
 font-weight: 400;
 line-height: 28px;
 }
-
-
-
 /* footer END */
+
 /* navigation  bottom_menu START */
 .bottom_menu{
   margin: 0 160px;
