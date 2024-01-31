@@ -12,9 +12,6 @@
   --but-view-our-work:#1B1C2B;
   --but-hover-view-our-work:#FDE4A6;
 }
-*{
-  border: 1px solid lightseagreen;
-}
 body{
   padding: 0;
   margin: 0;
@@ -334,8 +331,68 @@ color: var(--dark-blue);
   width: 100%;
 }
 /* section our_projects END */
-
-
+/* section features START */
+.features {
+  background: var(--grey);
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.features div{
+  margin: 0 160px;
+}
+.features div p{
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color:var(--dark-blue);
+}
+.features div h2{
+  display: block;
+  width: 630px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  color:var(--dark-blue);
+}
+.features div article{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.features div article section{
+  display: inline-block;
+  max-width: 405px;
+  background: var(--white);
+  margin-top: 32px;
+  padding-left: 42px;
+  padding-right: 32px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.features div article section h6{
+  margin: 0;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+color: var(--dark-blue);
+}
+.features div article section p{
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+color: var(--dark-blue);
+opacity: 70%;
+text-align: left;
+}
+/* section features END */
+/* *{
+  border: 1px solid lightseagreen;
+} */
 
 
 /* section send_form START */
