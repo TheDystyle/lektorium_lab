@@ -306,7 +306,6 @@ color: var(--dark-blue);
   justify-content: end;
   align-items: start;
 }
-
 .our_projects .content .right_content .top div:nth-of-type(1) p{
   display:block;
   max-width: 290px;
@@ -390,6 +389,96 @@ opacity: 70%;
 text-align: left;
 }
 /* section features END */
+/* section feedback START */
+.feedback {
+  background: var(--grey);
+  padding-top: 128px;
+  padding-bottom: 128px;
+  color: var(--dark-blue);
+}
+.feedback .container{
+  margin: 0 160px 0 160px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  flex-basis: 100%;
+}
+.feedback h3{
+font-size: 38px;
+font-weight: 600;
+line-height: 56px;
+margin: 0;
+}
+.feedback p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 70%;
+  margin: 0;
+}
+.feedback h5{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0;
+}
+.feedback .container .left_content{
+  width: 20%;
+  height: 100%;
+} 
+.feedback .container .right_content{
+  width: 75%;
+  height: 100%;
+} 
+.feedback .container .right_content .bottom{
+  position: relative;
+  margin-top: 48px;
+}
+.feedback .container .right_content .bottom img{
+  position: absolute;
+}
+.feedback .container .right_content .bottom p:nth-of-type(1){
+font-size: 18px;
+font-weight: 400;
+line-height: 32px;
+margin-left: 62px;
+}
+.feedback .container .right_content .bottom p:nth-of-type(2){
+font-size: 12px;
+font-weight: 400;
+line-height: 28px;
+margin-left: 62px;
+margin-top: 16px;
+}
+.feedback .container .right_content .bottom .left_arrow{
+  width: 48px;
+  height: 48px;
+  background: var(--white) url("../img/left_arrow.png") no-repeat center center;
+  border-radius: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 58px;
+}
+.feedback .container .right_content .bottom .left_arrow:hover{
+  background: #5239FA url("../img/left_arrow_w.png") no-repeat center center;
+}
+.feedback .container .right_content .bottom .right_arrow{
+  width: 48px;
+  height: 48px;
+  background: var(--white) url("../img/right_arrow_b.png") no-repeat center center;
+  border-radius: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+.feedback .container .right_content .bottom .right_arrow:hover{
+  background: #5239FA url("../img/right_arrow.png") no-repeat center center;
+}
+/* section feedback END */
 /* *{
   border: 1px solid lightseagreen;
 } */
