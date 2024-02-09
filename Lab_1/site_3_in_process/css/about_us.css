@@ -235,18 +235,20 @@ text-align: center;
 .mission{
   color: var(--dark-blue);
   background: var(--section-process-background);
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 .mission .top{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 128px 160px 0 160px;
+  margin: 0 160px;
 }
 .mission .bottom{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 96px 160px 96px 160px;
+  margin: 96px 160px;
 }
 .mission .top p,
 .mission .bottom p{
@@ -449,10 +451,6 @@ line-height: 56px;
   top: -6px;
 }
 /* team FINISH */
-
-
-
-
 /* footer START */
 footer{
   background: var(--tint-blue);
