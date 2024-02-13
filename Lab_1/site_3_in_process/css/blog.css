@@ -104,14 +104,66 @@ text-align: center;
 .our_blog{
   margin: 0 160px;
 }
+.our_blog h2{
+font-size: 48px;
+font-weight: 600;
+line-height: 64px;
+text-align: center;
+}
 .our_blog article{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.our_blog{
-  margin: 0 160px;
+.our_blog article .post{
+  max-width: 405px;
+  margin-right: 32px;
+  margin-bottom: 64px;
 }
+.our_blog article:last-child{
+  margin-right: 0;
+}
+.our_blog article .post img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+.our_blog article .post p:nth-of-type(1){
+font-size: 16px;
+font-weight: 500;
+line-height: 28px;
+opacity: 70%;
+margin-bottom: 16px;
+}
+.our_blog article .post h6{
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+margin-bottom: 16px;
+}
+.our_blog article .post p:nth-of-type(2){
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+opacity: 70%;
+margin-bottom: 24px;
+}
+.our_blog article .post a{
+  color: var(--tint-blue);
+font-size: 16px;
+font-weight: 500;
+line-height: 28px;
+}
+.our_blog article .post a:after{
+  content: "\2192";
+  margin-left: 5px;
+}
+.our_blog article .post a:hover{
+  cursor:pointer;
+}
+
+
 /* our_blog FINISH */
 /* footer START */
 footer{
