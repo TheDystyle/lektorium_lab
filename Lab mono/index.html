@@ -72,8 +72,8 @@
           </div>
 
           <div class="gradient-container_donate_sum">
-            <input type="text" id="name" name="handle_sum" required minlength="4" maxlength="8" size="6" value="1000"/>
-            ₴
+              <input type="text" id="name" name="handle_sum" required minlength="1" maxlength="5" size="5" value="0"/>
+            <span>₴</span>
           </div>
 
           <div class="gradient-container_list_donat">
@@ -86,24 +86,75 @@
 
       <div class="payment_area">
         <form name="myForm" action="" onsubmit="" method="post">
-          <input type="text" name="fname" value="Ваше ім'я (необов'язково)">
-          <input type="text" name="fname" value="Коментар (необов'язково)">
-
+          <input type="text" name="fname" placeholder="Ваше ім'я (необов'язково)">
+          <!-- <label for="link_1" tabindex="1">Ваше ім'я (необов'язково)</label> -->
+          <input type="text" name="fname" placeholder="Коментар (необов'язково)">
+          <input type="button" id="mono_pay">
+          <input type="button" id="google_pay">
         </form>
+      </div>
+
+      <div class="card_details">
+        
+        <div class="top_line">
+          <div class="line"></div>
+          <div class="text">або уведіть дані картки</div>
+        </div>
+
+        <div class="pay_by_card">
+          <input id="link_1" type="checkbox"/>
+          <label for="link_1" tabindex="1">Оплатит картою</label>
+          
+          <div class="hidden_content">
+            <div class="input_card_number">
+                <input type="text" id="number" name="card_number" placeholder="Номер картки" maxlength="12">
+                <label for="number" tabindex="1">Невірний номер картки</label>
+            </div>
+            
+            <div class="input_month_year_cvc">
+             
+              <div class="input_month">
+                <input type="text" id="month" name="card_month" placeholder="Місяць" maxlength="2">
+                <label for="month" tabindex="1">Помилка</label>
+              </div>
+              <div class="border_line"></div>
+              <div class="input_year">
+                <input type="text" id="year" name="card_year" placeholder="Рік" maxlength="2">
+                <label for="month" tabindex="1">Помилка</label>
+              </div>
+              <div class="border_line"></div>
+              <div class="input_cvc">
+                <input type="text" id="cvc" name="card_cvc" placeholder="CVC2" maxlength="3">
+                <label for="cvc" tabindex="1">Помилка</label>
+              </div>
+
+              
+            </div>
+            <input type ="submit" name="submit" id="pay" value = "Поповнити банку">
+
+          </div>
+          
+
+        </div>
+
+
+
       </div>
     </div>
   </section>
   <section class="footer_holder">
-    <div class="lecence">
-      АТ «УНІВЕРСАЛ БАНК» Ліцензія НБУ №92 від
-20.01.1994, у держреєстрі банків №226
+    <div class="licence">
+      АТ «УНІВЕРСАЛ БАНК» Ліцензія НБУ №92 від 20.01.1994, у держреєстрі банків №226
     </div>
     <div class="button_holder">
       <div class="button_left">
         <img src="img/cup.svg" alt="">
+        <input type ="submit" name="submit" id="prize" value = "Провести розіграш">
       </div>
+
       <div class="button_right">
         <img src="img/gamepad.svg" alt="">
+        <input type ="submit" name="submit" id="vidget" value = "Віджет для стрімів">
       </div>
     </div>
   </section>

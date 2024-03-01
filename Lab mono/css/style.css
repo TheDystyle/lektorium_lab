@@ -159,9 +159,6 @@ section .left_part .target_value::after {
     /* Left part END*/
 
     /* Right part START*/
-/* *{
-  border: 1px solid lightcoral;
-} */
 
 section .right_part{
   width: 50%;
@@ -203,16 +200,14 @@ section .right_part .gradient-container .gradient-container_white .gradient-cont
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 section .right_part .gradient-container .gradient-container_white .gradient-container_donate_sum input{
-  display: block;
-
-  max-width: 300px;
   text-align: center;
-  border: none;
+  width: 45%;
 }
 section .right_part .gradient-container .gradient-container_white .gradient-container_donate_sum #name:focus{
-  outline: none !important;
+  outline: none;
 }
 
 
@@ -236,6 +231,7 @@ section .right_part .gradient-container .gradient-container_white .gradient-cont
 section .right_part .gradient-container .gradient-container_white .gradient-container_list_donat .second_sum:hover,
 section .right_part .gradient-container .gradient-container_white .gradient-container_list_donat .third_sum:hover{
 background: #ccc;
+cursor: pointer;
 }
 section .right_part .gradient-container .gradient-container_white .gradient-container_list_donat .first_sum:before,
 section .right_part .gradient-container .gradient-container_white .gradient-container_list_donat .second_sum:before,
@@ -247,18 +243,284 @@ section .right_part .gradient-container .gradient-container_white .gradient-cont
 section .right_part .gradient-container .gradient-container_white .gradient-container_list_donat .third_sum::after{
   content: " ₴";
 }
-
+section .right_part .payment_area{
+  width: 100%;
+  max-width: 340px;
+}
 section .right_part .payment_area form{
   display: flex;
   flex-direction: column;
-  border: 1px solid;
-  max-width: 340px;
   justify-content: center;
   align-items: center;
 }
+section .right_part .payment_area form input{
+  position: relative;
+  font-size: 16px;
+  opacity: 60%;
+  width: 100%;
+}
+section .right_part .payment_area form input[type="text"]{
+  height: 56px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 0 16px;
+}
+
+section .right_part .payment_area form input:focus::placeholder{
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  opacity: 1;
+  font-size: 12px;
+}
+/* section .right_part .payment_area form input[id="mono_pay"]{
+  border-radius: 16px;
+} */
+#mono_pay{
+  opacity: 1;
+  text-align: center;
+  height: 48px;
+  width: 340px;
+  border-radius: 8px;
+  background: #000 url("../img/mono_pay.svg") no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 16px;
+}
+#google_pay {
+  opacity: 1;
+  text-align: center;
+  height: 48px;
+  width: 340px;
+  border-radius: 8px;
+  background: #000 url("../img/google_pay.svg") no-repeat;
+  background-position: 50% 50%;
+  background-size: 66px 26px;
+}
+#mono_pay:hover,
+#google_pay:hover{
+  cursor: pointer;
+}
+
+/* line and label  "або уведіть дані картки" START */
+.card_details{
+  width: 340px;
+}
+.top_line {
+  position: relative;
+  margin: 24px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.line {
+  width: 100%;
+  height: 1px; /* Толщина линии */
+  background-color: #ccc; /* Цвет линии */
+}
+.text {
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  top: -12px;
+  background-color: white;
+  padding: 0 16px; /* Отступы текста */
+}
+/* line and label  "або уведіть дані картки" END */
+
+/* pay_by_card START */
+.pay_by_card{
+  cursor: pointer;
+  background: url("../img/card.svg") no-repeat;
+  background-position: 92px 4px;
+}
+.pay_by_card label:hover{
+  cursor: pointer;
+}
+.pay_by_card label{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 8px;
+  color: #e85e5b;
+}
+
+/* hidden_content */
+#link_1, .hidden_content{
+  display: none;
+}
+
+#link_1:checked ~ .hidden_content{
+  display: block;
+}
+
+.input_card_number{
+  position: relative;
+}
+.input_card_number input{
+  margin-top: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: transparent;
+  padding: 0 16px;
+  height: 56px;  
+}
+.input_month_year_cvc{
+  margin-top: 18px;
+  margin-bottom: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: transparent;
+  padding: 0 16px;
+  height: 56px;  
+}
+.input_card_number label{
+  position: absolute;
+  left: 7px;
+  top: 70px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.input_card_number input:hover::placeholder
+{
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  opacity: 1;
+  font-size: 12px;
+}
+.input_card_number input:focus{
+  outline: none;
+}
+.input_month_year_cvc{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  /* border: 1px solid lightcoral; */
+}
+
+
+.input_month_year_cvc div input{
+  /* border: 1px solid lightcoral; */
+  width:100%;
+  margin: 4px auto;
+  padding-top: 12px;
+  height: 41px;
+  font-size: 16px;
+  line-height: 24px;
+} 
+.input_month_year_cvc .input_month label
+{
+  position: absolute;
+  top: 52px;
+  left: 7px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.input_month_year_cvc .input_year label{
+  position: absolute;
+  top: 52px;
+  left: 110px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.input_month_year_cvc .input_cvc label{
+  position: absolute;
+  top: 52px;
+  left: 213px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.input_month_year_cvc #month:hover::placeholder,
+.input_month_year_cvc #year:hover::placeholder,
+.input_month_year_cvc #cvc:hover::placeholder
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  font-size: 12px;
+}
+#month:focus,
+#year:focus,
+#cvc:focus
+{
+  outline: none;
+}
+#pay{
+  width: 100%;
+  height: 56px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 2px;
+  margin-bottom: 42px;
+  color: #fff;
+  background: #FDB9BB;
+}
+#pay:hover{
+  cursor: pointer;
+}
+/* *{
+  border: 1px solid lightcoral;
+} */
+
     /* Right part END*/
 
 /* card END */
 .footer_holder{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 990px; 
+  border-radius: 24px;
+  margin: 16px auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: .8;
+  color: #fff;
+}
+.footer_holder .licence{
+  max-width: 269px;
+}
+.footer_holder .button_holder{
+  display: flex;
+}
+.footer_holder .button_holder .button_left{
+  
+}
+.footer_holder .button_holder .button_right,
+.footer_holder .button_holder .button_left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 8px 0 0 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 0 16px;
+  height: 40px;
+}
+.footer_holder .button_holder .button_right input,
+.footer_holder .button_holder .button_left input{
+  background: rgba(255, 255, 255, 0.08);
+  margin-left: 8px;
+}
+.footer_holder .button_holder .button_right:hover,
+.footer_holder .button_holder .button_left:hover{
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }

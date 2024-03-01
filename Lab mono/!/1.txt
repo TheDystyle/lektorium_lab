@@ -1,0 +1,400 @@
+<html>
+
+<head></head>
+
+<body>
+  <section class="card">
+    <div class="card__header">
+      <img src="https://send.monobank.ua/img/logo_short.png" class="short-logo" alt="monobank logo">
+      <div class="jar">
+        <img class="jar__bg" src="https://send.monobank.ua/img/jar_bg.png">
+        <img class="jar__glass" src="https://send.monobank.ua/img/jar/uah_50.png">
+        <p class="jar__owner">Артем К. збирає</p>
+        <p class="jar__name">На ремонт медеваку</p>
+      </div>
+      <div class="card__info">
+        <p>Збираємо на ремонт медеваку для<br>
+          4ОТБР танкова бригада</p>
+        <br>
+        <p>Ремонтуємо 2 автівки - Тойоту та Нісан.</p>
+        <br>
+        <p>У бригаді є наші земляки з Черкащини!</p>
+        <br>
+        <p>Ремонт авто треба на вчора! Прохання підтримати!</p>
+      </div>
+
+      <div class="stats">
+        <div class="stats-data"><img src="https://send.monobank.ua/img/collected.svg" class="stats-data__icon">
+          <div class="stats-data__text-container">
+            <div class="stats-data__label">Накопичено</div>
+            <div class="stats-data__value">7&nbsp;700&nbsp;₴</div>
+          </div>
+        </div>
+        <div class="stats-data"><img src="https://send.monobank.ua/img/target.svg" class="stats-data__icon">
+          <div class="stats-data__text-container">
+            <div class="stats-data__label">Ціль</div>
+            <div class="stats-data__value">25&nbsp;000&nbsp;₴</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card__body">
+      <div class="gradient-container">
+        <div class="jar-top-up-title">
+          Сума поповнення
+          <img      src="https://send.monobank.ua/img/money.png" class="money_emoji"> 
+      </div>
+        <div class="money-input-block-empty">
+        <div class="money-input-contenteditable"     contenteditable="true" inputmode="decimal">0</div>
+          <div class="money-input-trailing">&nbsp;₴</div>
+        </div>
+        <div class="choice-row">
+          <div tabindex="0" class="chip-button">
+            <div class="main-label">+100&nbsp;₴</div>           </div>
+          <div tabindex="0" class="chip-button">
+            <div class="main-label">+500&nbsp;₴</div>           </div>
+          <div tabindex="0" class="chip-button">
+            <div class="main-label">+1&nbsp;000&nbsp₴</div>
+            </div>
+          </div>
+    </div>
+       <div class="field card-holder">
+    <input id="cardHolder" class="inputF" autocomplete="cc-name" placeholder="Ваше ім'я (необов'язково)" value="">
+    <label id="x-name-field"></label>
+    <span class="err"></span>
+</div>
+
+<div class="field card-holder">
+    <input id="comment" class="inputF" maxlength="160" autocomplete="off"  placeholder="Коментар (необов'язково)" value="">
+    <label id="x-comment-field"></label>
+</div>
+      
+  </section>
+</body>
+
+</html>
+  
+ 
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(136.56deg, #8a53b6 0%, #cea2d0 97.42%) no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.card {
+  display: flex;
+  background: white;
+  min-height: 680px;
+  max-width: 990px;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  width: 50%;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__header {
+  background: #f3f4f6;
+}
+
+.card .short-logo {
+  margin-bottom: 32px;
+}
+
+.card__info {
+  padding: 0 25px;
+}
+
+.card__info p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+}
+
+/* JAR */
+
+.jar {
+  position: relative;
+  text-align: center;
+}
+
+.jar__bg {
+  width: 215px;
+  height: 215px;
+  margin-bottom: 20px;
+}
+
+.jar__glass {
+  height: 203px;
+  width: 155px;
+  left: 35px;
+  top: 10px;
+  position: absolute;
+}
+
+.jar__owner {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.jar__name {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+/* STATS */
+
+.stats {
+  margin-top: 16px;
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.stats-data {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px;
+  margin: 12px 0;
+}
+
+.stats-data:not(:last-child) {
+  border-right: solid #ccc 0.5px;
+}
+
+.stats-data__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+
+.stats-data__value {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+.gradient-container {
+  position: relative;
+  padding: 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 394px;
+    -webkit-background-clip: padding !important;
+    -moz-background-clip: padding !important;
+    background-clip: padding-box !important;
+    border: solid 3px transparent; 
+    background: #4a3e3e;
+    border-radius: 24px;
+    margin-top: 42px;
+    margin-bottom: 32px;
+  background: -webkit-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: -moz-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: -o-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: -ms-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: linear-gradient(92.12deg, #57b5f9 0%, #da11ba 100%);
+    background-image: linear-gradient(92.12deg, rgb(87, 181, 249) 0%, rgb(218, 17, 186) 100%);
+  font-family: "Inter", "LatoWeb", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jar-top-up-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0 !important;
+}
+.money_emoji {
+  width: 16px;
+  margin-left: 0.5em;
+  margin-bottom: -3px 
+}
+.money-input-contenteditable {
+    outline: 0;
+    padding-right: 1px;
+}
+.gradient-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -3px;
+    border-radius: 24px;
+    background: -webkit-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: -moz-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: -o-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: -ms-linear-gradient(357.88deg, #57b5f9 0%, #da11ba 100%);
+    background: linear-gradient(92.12deg, #57b5f9 0%, #da11ba 100%);
+    background-image: linear-gradient(92.12deg, rgb(87, 181, 249) 0%, rgb(218, 17, 186) 100%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+} 
+.money-input-block-empty {
+    opacity: .4;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    padding: 20px 0;
+    font-family: "Inter", "LatoWeb", 'Segoe UI', Tahoma, Geneva, Verdana,     sans-serif;
+}
+
+.choice-row {
+  display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    max-width: 346px;
+    margin: auto;
+    margin-top: 0;
+    width: 100%;
+}
+
+.choice-row .chip-button {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 0 3px;
+    text-align: center;
+    margin: 0 8px;
+    transotion: background .2s;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.choice-row .chip-button .main-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.inputF {
+    max-width: 306px;
+    width: 306px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background: transparent;
+    padding: 0 16px;
+    height: 56px;
+}
+.field .input.inputF {
+text-transform: none;
+    background: none;
+    text-align: left;
+    border: 0;
+    color: #000;
+    height: 41px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 0;
+    margin-top: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.inputF::placeholder {
+    font-size: 14px; /* Размер по умолчанию */
+    text-align: left; /* Выравнивание по умолчанию */
+    transition: font-size 0.3s ease, transform 0.3s ease; /* Плавный переход для размера шрифта и положения */
+    transform: translate(0, 0); /* Начальное положение */
+}
+
+.inputF:focus::placeholder {
+    font-size: 10px; /* Уменьшенный размер шрифта */
+    text-align: left; /* Выравнивание текста влево */
+    transform: translate(0%, -140%); /* Перемещение в левый верхний угол */
+}
