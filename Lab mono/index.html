@@ -72,7 +72,7 @@
           </div>
 
           <div class="gradient-container_donate_sum">
-              <input type="text" id="name" name="handle_sum" required minlength="1" maxlength="5" size="5" value="0"/>
+              <input type="text" id="sum" name="handle_sum" required minlength="1" maxlength="5" size="5" value="0"/>
             <span>₴</span>
           </div>
 
@@ -86,9 +86,9 @@
 
       <div class="payment_area">
         <form name="myForm" action="" onsubmit="" method="post">
-          <input type="text" name="fname" placeholder="Ваше ім'я (необов'язково)">
+          <input type="text" id="first_name" name="first_name" placeholder="Ваше ім'я (необов'язково)">
           <!-- <label for="link_1" tabindex="1">Ваше ім'я (необов'язково)</label> -->
-          <input type="text" name="fname" placeholder="Коментар (необов'язково)">
+          <input type="text" id="last_name" name="last_name" placeholder="Коментар (необов'язково)">
           <input type="button" id="mono_pay">
           <input type="button" id="google_pay">
         </form>
@@ -158,5 +158,6 @@
       </div>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
