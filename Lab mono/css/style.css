@@ -206,7 +206,7 @@ section .right_part .gradient-container .gradient-container_white .gradient-cont
   text-align: center;
   width: 45%;
 }
-section .right_part .gradient-container .gradient-container_white .gradient-container_donate_sum #name:focus{
+section .right_part .gradient-container .gradient-container_white .gradient-container_donate_sum #sum:focus{
   outline: none;
 }
 
@@ -248,6 +248,7 @@ section .right_part .payment_area{
   max-width: 340px;
 }
 section .right_part .payment_area form{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,16 +268,14 @@ section .right_part .payment_area form input[type="text"]{
   padding: 0 16px;
 }
 
-section .right_part .payment_area form input:focus::placeholder{
+section .right_part .payment_area form input:hover::placeholder{
   position: absolute;
   top: 2px;
   left: 15px;
   opacity: 1;
   font-size: 12px;
 }
-/* section .right_part .payment_area form input[id="mono_pay"]{
-  border-radius: 16px;
-} */
+
 #mono_pay{
   opacity: 1;
   text-align: center;
@@ -394,21 +393,16 @@ section .right_part .payment_area form input:focus::placeholder{
   opacity: 1;
   font-size: 12px;
 }
-.input_card_number input:focus{
-  outline: none;
-}
 .input_month_year_cvc{
   position: relative;
   display: flex;
   justify-content: space-between;
   align-content: center;
   width: 100%;
-  /* border: 1px solid lightcoral; */
 }
 
 
 .input_month_year_cvc div input{
-  /* border: 1px solid lightcoral; */
   width:100%;
   margin: 4px auto;
   padding-top: 12px;
@@ -469,9 +463,6 @@ section .right_part .payment_area form input:focus::placeholder{
 #pay:hover{
   cursor: pointer;
 }
-/* *{
-  border: 1px solid lightcoral;
-} */
 
     /* Right part END*/
 
